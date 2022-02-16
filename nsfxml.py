@@ -6,7 +6,7 @@ import pandas as pd
 
 import zipfile
 
-dir_name = '//Users/Aerdaxie/Dropbox/Job/Data incubator/DI2017/nsfgrant'
+dir_name = '~DI2017/nsfgrant'
 extension = ".zip"
 
 os.chdir(dir_name) # change directory from working dir to dir with files
@@ -46,7 +46,7 @@ def xml2df(file_list):
         nsf_grant = pd.DataFrame.from_dict (all_record)
     return nsf_grant
 
-dir_test = '//Users/Aerdaxie/Dropbox/Job/Data incubator/DI2017/nsftest'
+dir_test = '~DI2017/nsftest'
 test_file = os.listdir(dir_test)
 os.chdir(dir_test)
 len (test_file)
